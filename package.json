@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "watch": "vite build -w",
     "serve": "vite preview"
   },
   "devDependencies": {
