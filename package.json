@@ -1,7 +1,14 @@
 {
   "name": "vite-ts-lib-starter",
   "version": "0.0.0",
-  "main": "dist/my-lib.umd.js",
+  "main": "./dist/my-lib.umd.js",
+  "module": "./dist/my-lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.es.js",
+      "require": "./dist/my-lib.umd.js"
+    }
+  },
   "types": "./types/main.d.ts",
   "files": [
     "/dist",
