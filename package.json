@@ -16,9 +16,9 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "watch": "vite build -w",
-    "serve": "vite preview"
+    "build": "vue-tsc && vite build",
+    "watch": "concurrently \"vue-tsc --watch\" \"vite build --watch\"",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "typescript": "^4.3.2",
