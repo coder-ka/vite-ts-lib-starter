@@ -5,9 +5,9 @@
   "module": "./dist/my-lib.es.js",
   "exports": {
     ".": {
+      "types": "./types/main.d.ts",
       "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js",
-      "types": "./types/main.d.ts"
+      "require": "./dist/my-lib.umd.js"
     }
   },
   "types": "./types/main.d.ts",
